@@ -1,0 +1,172 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b0f19;
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgba(0,0,0,0.8);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00e5ff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #00e5ff;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 60px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.hero-image img {
+    width: 380px;
+    filter: drop-shadow(0 0 20px #00e5ff);
+}
+/* Button */
+.btn {
+    background: #00e5ff;
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+/* Buy Section */
+.buy {
+    text-align: center;
+    padding: 100px 20px; /* tambah jarak atas-bawah */
+    background: #020617;
+}
+
+/* Buy Box */
+.buy-box {
+    background: #111827;
+    padding: 30px;
+    margin: 40px auto 0; 
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(12, 113, 81, 0.2);
+}
+.buy-box h3 {
+    margin-bottom: 20px; /* kasih jarak ke tombol */
+}
+
+.btn:hover {
+    background: #00bcd4;
+    color: white;
+}
+
+/* Features */
+.features {
+    text-align: center;
+    padding: 80px 60px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.card {
+    width: 30%;
+    background: #111827;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #1f2937;
+}
+
+/* Specs */
+.specs {
+    padding: 60px;
+    background: #020617;
+    text-align: center;
+}
+
+.specs ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
